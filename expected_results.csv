@@ -1,2 +1,3 @@
 testcase,category,cwe,vulnerable
 001,cmdi,78,true
+002,cmdi,78,false
