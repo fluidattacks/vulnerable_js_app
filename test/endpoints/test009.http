@@ -1,0 +1,6 @@
+# normal
+GET http://localhost:3000/test009/jane HTTP/1.1
+
+###
+# explit
+GET http://localhost:3000/test009/jane$(touch f.txt) HTTP/1.1
