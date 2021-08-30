@@ -17,3 +17,9 @@ testcase,category,cwe,vulnerable
 0016,cmdi,78,true
 0017,cmdi,78,true
 0018,cmdi,78,false
+0019,cmdi,22,true
+0020,cmdi,22,true
+0021,cmdi,22,true
+0022,cmdi,22,true
+0023,cmdi,22,true
+0024,cmdi,22,false
