@@ -8,7 +8,7 @@ router.get('/test012/:user', function (req, res) {
   var user_files = [];
   var user = "";
   for (user of Object.values(req.params)) {
-    exec("ls test/test_files/users/" + user + "/", (error, stdout, stderr) => {
+    exec("ls target/user_files/" + user + "/", (error, stdout, stderr) => {
 
       for (file of stdout.split('\n')) {
         if (file) {

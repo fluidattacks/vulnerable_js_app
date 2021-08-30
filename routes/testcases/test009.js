@@ -8,7 +8,7 @@ router.get('/test009/:user', function (req, res) {
   var user = req.params['user'];
 
   var command = "/run/current-system/sw/bin/ls";
-  var arguments = ["test/test_files/users/" + user + "/"]
+  var arguments = ["target/user_files/" + user + "/"]
   execFile(command, arguments, (error, stdout) => {
 
     var user_files = [];

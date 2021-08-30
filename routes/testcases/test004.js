@@ -6,7 +6,7 @@ var router = express.Router();
 
 router.get('/test004/', function (req, res) {
   var user = req.query.user;
-  exec(`ls test/test_files/users/${user}/`, (error, stdout, stderr) => {
+  exec(`ls target/user_files/${user}/`, (error, stdout, stderr) => {
 
     var user_files = [];
     for (file of stdout.split('\n')) {

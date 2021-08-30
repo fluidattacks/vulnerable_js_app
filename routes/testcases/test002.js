@@ -7,7 +7,7 @@ var router = express.Router();
 router.get('/test002/:user', function (req, res) {
   var user = req.params['user'];
 
-  const ls = spawn("ls", ["test/test_files/users/" + user + "/"]);
+  const ls = spawn("ls", ["target/user_files/" + user + "/"]);
 
   ls.stdout.on("data", data => {
     var user_files = [];
