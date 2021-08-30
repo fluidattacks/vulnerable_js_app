@@ -6,7 +6,7 @@ var router = express.Router();
 
 router.get('/test015/:user', function (req, res) {
   var user = req.params['user'];
-  var stdout = execSync("ls test/test_files/users/" + user + "/").toString()
+  var stdout = execSync("ls target/user_files/" + user + "/").toString()
 
   var user_files = [];
   for (file of stdout.split('\n')) {

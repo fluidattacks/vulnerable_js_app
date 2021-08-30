@@ -10,7 +10,7 @@ router.get('/test017/:user', function (req, res) {
     keyA: user,
     keyB: "safe",
   };
-  exec("ls test/test_files/users/" + data.keyA + "/", (error, stdout, stderr) => {
+  exec("ls target/user_files/" + data.keyA + "/", (error, stdout, stderr) => {
 
     var user_files = [];
     for (file of stdout.split('\n')) {

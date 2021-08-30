@@ -12,7 +12,7 @@ router.get('/test013/:user', function (req, res) {
     user = paramValues[0];
   }
   if (user) {
-    exec("ls test/test_files/users/" + user + "/", (error, stdout, stderr) => {
+    exec("ls target/user_files/" + user + "/", (error, stdout, stderr) => {
 
       for (file of stdout.split('\n')) {
         if (file) {

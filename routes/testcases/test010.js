@@ -11,7 +11,7 @@ router.get('/test010/:user', function (req, res) {
     user = parameters['user'];
   }
   user = decodeURI(user);
-  exec(`ls test/test_files/users/${user}/`, (error, stdout, stderr) => {
+  exec(`ls target/user_files/${user}/`, (error, stdout, stderr) => {
 
     var user_files = [];
     for (file of stdout.split('\n')) {
