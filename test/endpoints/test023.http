@@ -1,0 +1,6 @@
+# normal
+GET http://localhost:3000/test023/?user=jane&fileName=clinical_information HTTP/1.1
+
+###
+# explit
+GET http://localhost:3000/test023/?user=jane&fileName=..%2Fmary%2Fclinical_information HTTP/1.1
