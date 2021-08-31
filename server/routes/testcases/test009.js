@@ -1,18 +1,18 @@
 const {
-  spawn
+  execFile
 } = require("child_process");
 var express = require('express');
 var router = express.Router();
 
-router.get('/test002/:user', function (req, res) {
+router.get('/test009/:user', function (req, res) {
   var user = req.params['user'];
 
-  const ls = spawn("ls", ["target/user_files/" + user + "/"]);
+  var command = "/run/current-system/sw/bin/ls";
+  let route = "target/user_files/" + user + "/";
+  execFile(command, route, (error, stdout) => {
 
-  ls.stdout.on("data", data => {
     var user_files = [];
-
-    for (file of data.toString().split('\n')) {
+    for (file of stdout.split('\n')) {
       if (file) {
         user_files.push(file);
       }
@@ -22,12 +22,6 @@ router.get('/test002/:user', function (req, res) {
       'user_files': user_files
     };
     res.json(data);
-
-  });
-  ls.stderr.on("data", data => {
-    res.status(400).json({
-      'error': data.toString()
-    });
   });
 });
 
