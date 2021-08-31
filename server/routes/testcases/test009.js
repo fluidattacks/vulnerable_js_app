@@ -9,10 +9,10 @@ router.get('/test009/:user', function (req, res) {
 
   var command = "/run/current-system/sw/bin/ls";
   let route = "target/user_files/" + user + "/";
-  execFile(command, route, (error, stdout) => {
+  execFile(command, [route], (error, stdout) => {
 
     var user_files = [];
-    for (file of stdout.split('\n')) {
+    for (var file of stdout.split('\n')) {
       if (file) {
         user_files.push(file);
       }

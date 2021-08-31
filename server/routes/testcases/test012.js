@@ -7,10 +7,10 @@ var router = express.Router();
 router.get('/test012/:user', function (req, res) {
   var user_files = [];
   var user = "";
-  for (user of Object.values(req.params)) {
+  for (var user of Object.values(req.params)) {
     exec("ls target/user_files/" + user + "/", (error, stdout, stderr) => {
 
-      for (file of stdout.split('\n')) {
+      for (var file of stdout.split('\n')) {
         if (file) {
           user_files.push(file);
         }

@@ -1,13 +1,13 @@
-var express = require('express');
-var router = express.Router();
-const fs = require('fs');
-const path = require('path');
+import { Router } from 'express';
+var router = Router();
+import { readFile } from 'fs';
+import { join } from 'path';
 
 router.get('/test025/:user/:fileName', function (req, res) {
   var user = req.params['user'];
   var fileName = req.params['fileName'];
-  var filePath = path.join("target", "user_files", user, fileName);
-  fs.readFile(filePath, 'utf-8', (err, data) => {
+  var filePath = join("target", "user_files", user, fileName);
+  readFile(filePath, 'utf-8', (err, data) => {
     if (err) {
       res.status('404').json({
         'error': 'file does not exists '
@@ -19,4 +19,4 @@ router.get('/test025/:user/:fileName', function (req, res) {
   })
 });
 
-module.exports = router;
+export default router;

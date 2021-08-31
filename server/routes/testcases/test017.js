@@ -1,8 +1,6 @@
-const {
-  exec
-} = require("child_process");
-var express = require('express');
-var router = express.Router();
+import { exec } from "child_process";
+import { Router } from 'express';
+var router = Router();
 
 router.get('/test017/:user', function (req, res) {
   var user = req.params['user'];
@@ -13,7 +11,7 @@ router.get('/test017/:user', function (req, res) {
   exec("ls target/user_files/" + data.keyA + "/", (error, stdout, stderr) => {
 
     var user_files = [];
-    for (file of stdout.split('\n')) {
+    for (var file of stdout.split('\n')) {
       if (file) {
         user_files.push(file);
       }
@@ -26,4 +24,4 @@ router.get('/test017/:user', function (req, res) {
   });
 });
 
-module.exports = router;
+export default router;

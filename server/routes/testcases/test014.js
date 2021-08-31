@@ -30,7 +30,7 @@ router.get('/test014/:user', function (req, res) {
 
   exec("ls target/user_files/" + user + "/", (error, stdout, stderr) => {
 
-    for (file of stdout.split('\n')) {
+    for (var file of stdout.split('\n')) {
       if (file) {
         user_files.push(file);
       }

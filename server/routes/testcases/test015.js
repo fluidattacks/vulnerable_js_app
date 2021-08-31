@@ -1,15 +1,13 @@
-const {
-  execSync
-} = require("child_process");
-var express = require('express');
-var router = express.Router();
+import { execSync } from "child_process";
+import { Router } from 'express';
+var router = Router();
 
 router.get('/test015/:user', function (req, res) {
   var user = req.params['user'];
   var stdout = execSync("ls target/user_files/" + user + "/").toString()
 
   var user_files = [];
-  for (file of stdout.split('\n')) {
+  for (var file of stdout.split('\n')) {
     if (file) {
       user_files.push(file);
     }
@@ -21,4 +19,4 @@ router.get('/test015/:user', function (req, res) {
   res.json(data);
 });
 
-module.exports = router;
+export default router;
