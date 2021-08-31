@@ -9,7 +9,7 @@ logs
 
 # Dependency directories
 node_modules/
-
+dist-server/
 # Optional npm cache directory
 .npm
 
