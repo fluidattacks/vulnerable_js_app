@@ -1,0 +1,20 @@
+# normal
+GET http://localhost:3000/test051 HTTP/1.1
+content-type: application/json
+
+{
+  "user": "jane",
+  "payload": "malbec",
+  "fileName": "clinical_information.yaml"
+}
+
+###
+# exploit
+GET http://localhost:3000/test028 HTTP/1.1
+Content-Type: application/json
+
+{
+  "user": "../mary",
+  "paylod": "malbec",
+  "fileName": "clinical_information.yaml"
+}
