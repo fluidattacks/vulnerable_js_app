@@ -1,0 +1,6 @@
+# normal
+GET http://localhost:3000/test073/jane HTTP/1.1
+
+###
+# explit
+GET http://localhost:3000/test073/..%2Fmary HTTP/1.1

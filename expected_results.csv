@@ -70,3 +70,6 @@ testcase,category,cwe,vulnerable
 0068,cmdi,78,true
 0069,pathtraver,22,false
 0070,pathtraver,22,true
+0071,cmdi,78,true
+0072,pathtraver,22,true
+0073,pathtraver,22,true
