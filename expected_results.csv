@@ -76,3 +76,15 @@ testcase,category,cwe,vulnerable
 074,cmdi,78,true
 075,pathtraver,22,true
 076,pathtraver,22,true
+077,xss,79,true
+078,xss,79,true
+079,xss,79,true
+080,xss,79,true
+081,xss,79,true
+082,xss,79,false
+083,xss,79,true
+084,xss,79,false
+085,xss,79,true
+086,xss,79,true
+087,xss,79,true
+088,xss,79,false

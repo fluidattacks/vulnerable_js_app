@@ -1,8 +1,9 @@
-import { Router } from "express";
-var router = Router();
+var express = require("express");
+var router = express.Router();
 
-router.get("/test077/:user", function (req, res) {
-  var user = req.params["user"];
+router.get("/test080/:user", function (req, res) {
+  var user = "";
+  user = req.params["user"];
   res.setHeader("Content-Type", "text/html");
   res.setHeader("X-XSS-Protection", "0");
   res.send(

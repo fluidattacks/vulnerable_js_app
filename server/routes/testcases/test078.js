@@ -1,8 +1,13 @@
 import { Router } from "express";
 var router = Router();
 
-router.get("/test077/:user", function (req, res) {
-  var user = req.params["user"];
+router.get("/test078/:user", function (req, res) {
+  var param = req.params["user"];
+
+  var user = "Jane Doe";
+  if (32 > 31) {
+    user = param;
+  }
   res.setHeader("Content-Type", "text/html");
   res.setHeader("X-XSS-Protection", "0");
   res.send(
