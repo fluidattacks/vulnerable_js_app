@@ -88,3 +88,11 @@ testcase,category,cwe,vulnerable
 086,xss,79,true
 087,xss,79,true
 088,xss,79,false
+089,xss,79,false
+090,xss,79,true
+091,xss,79,true
+092,xss,79,true
+093,xss,79,true
+094,xss,79,false
+095,xss,79,false
+096,xss,79,false
