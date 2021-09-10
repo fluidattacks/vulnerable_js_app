@@ -1,0 +1,6 @@
+# normal
+GET  http://localhost:3000/test095/danny HTTP/1.1
+
+###
+# explit
+GET  http://localhost:3000/test095/%3Cscript%20type%3D%22text%2Fjavascript%22%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1
