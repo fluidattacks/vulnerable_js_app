@@ -96,3 +96,10 @@ testcase,category,cwe,vulnerable
 094,xss,79,false
 095,xss,79,false
 096,xss,79,false
+097,securecookie,614,true
+098,securecookie,614,true
+099,securecookie,614,true
+100,securecookie,614,true
+101,securecookie,614,false
+102,securecookie,614,true
+103,securecookie,614,flase

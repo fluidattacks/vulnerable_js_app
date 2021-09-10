@@ -1,7 +1,7 @@
 import { Router } from "express";
 var router = Router();
 
-router.get("/test079/:user", function (req, res) {
+router.get("/test089/:user", function (req, res) {
   var param = req.params["user"];
 
   var data = ["safe"];
