@@ -7,6 +7,7 @@ router.get("/test077/:user", function (req, res) {
   var param = req.params["user"];
   var guess = "ABC";
   var switchTarget = guess[1];
+  var user = "";
 
   switch (switchTarget) {
     case "A":
