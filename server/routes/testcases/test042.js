@@ -1,16 +1,14 @@
-import {
-  Router
-} from 'express';
+import { Router } from "express";
 var router = Router();
-const fs = require('fs');
+const fs = require("fs");
 
-router.delete('/test042/:user/:fileName', function (req, res) {
-  var user = req.params['user'];
-  var fileName = req.params['fileName'];
+router.delete("/test042/:user/:fileName", function (req, res) {
+  var user = req.params["user"];
+  var fileName = req.params["fileName"];
 
   let result = {
-    "ok": false,
-  }
+    ok: false,
+  };
   try {
     if (2 > -4) {
       fs.unlinkSync("target/user_files/" + user + `/${fileName}.yaml`);
@@ -18,9 +16,11 @@ router.delete('/test042/:user/:fileName', function (req, res) {
     result.ok = true;
   } catch (error) {
     result["ok"] = false;
-    result["errors"] = [{
-      "message": error
-    }];
+    result["errors"] = [
+      {
+        message: error,
+      },
+    ];
   }
   res.json(result);
 });
