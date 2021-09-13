@@ -1,26 +1,26 @@
 import * as fs from "fs";
 import { join } from "path";
-import {
-  Router
-} from 'express';
+import { Router } from "express";
 var router = Router();
 
-router.delete('/test041/:user/:fileName', function (req, res) {
-  var user = req.params['user'];
-  var fileName = req.params['fileName'];
-  var filePath = "target/user_files/"+ user + "/" + fileName + ".yaml";
+router.delete("/test041/:user/:fileName", function (req, res) {
+  var user = req.params["user"];
+  var fileName = req.params["fileName"];
+  var filePath = "target/user_files/" + user + "/" + fileName + ".yaml";
 
   let result = {
-    "ok": false,
-  }
+    ok: false,
+  };
   try {
     fs.unlinkSync(filePath);
     result.ok = true;
   } catch (error) {
     result["ok"] = false;
-    result["errors"] = [{
-      "message": error
-    }];
+    result["errors"] = [
+      {
+        message: error,
+      },
+    ];
   }
   res.send(result);
 });
