@@ -118,3 +118,14 @@ testcase,category,cwe,vulnerable
 116,crypto,310+327,true
 117,crypto,310+327,true
 118,crypto,310+327,true
+119,crypto,310+327,true
+120,crypto,310+327,true
+121,crypto,310+327,true
+122,crypto,310+327,false
+123,crypto,310+327,false
+124,crypto,310+327,false
+125,crypto,310+327,true
+126,crypto,310+327,true
+127,crypto,310+327,true
+128,crypto,310+327,true
+129,crypto,310+327,true
