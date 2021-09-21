@@ -113,7 +113,7 @@ testcase,category,cwe,vulnerable
 111,crypto,310+327,true
 112,crypto,310+327,true
 113,crypto,310+327,false
-114,crypto,310+327,true
+114,crypto,310+327,false
 115,crypto,310+327,true
 116,crypto,310+327,true
 117,crypto,310+327,true
@@ -128,4 +128,6 @@ testcase,category,cwe,vulnerable
 126,crypto,310+327,true
 127,crypto,310+327,true
 128,crypto,310+327,true
+129,crypto,310+327,true
+129,crypto,310+327,true
 129,crypto,310+327,true
