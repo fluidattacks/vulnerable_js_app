@@ -135,3 +135,9 @@ testcase,category,cwe,vulnerable
 133,crypto,310+327,true
 134,crypto,310+327,true
 135,crypto,310+327,false
+136,crypto,310+327,true
+137,crypto,310+327,true
+138,crypto,310+327,true
+139,crypto,310+327,true
+140,crypto,310+327,true
+141,crypto,310+327,false
