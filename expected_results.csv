@@ -141,3 +141,8 @@ testcase,category,cwe,vulnerable
 139,crypto,310+327,true
 140,crypto,310+327,true
 141,crypto,310+327,false
+142,xpathi,643,true
+143,xpathi,643,true
+144,xpathi,643,false
+145,xpathi,643,true
+146,xpathi,643,true
