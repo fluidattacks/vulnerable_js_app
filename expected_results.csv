@@ -146,3 +146,9 @@ testcase,category,cwe,vulnerable
 144,xpathi,643,false
 145,xpathi,643,true
 146,xpathi,643,true
+146,xpathi,643,true
+147,xpathi,643,true
+148,weakrand,330,true
+149,weakrand,330,false
+150,weakrand,330,false
+151,weakrand,330,true
