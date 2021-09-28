@@ -84,3 +84,9 @@ function onListening() {
   var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
   debug("Listening on " + bind);
 }
+
+process.once("SIGHUP", function () {
+  console.log("---------------KILL-----------------");
+  console.log(process.pid);
+  process.kill(process.pid, "SIGHUP");
+});
