@@ -152,3 +152,7 @@ testcase,category,cwe,vulnerable
 149,weakrand,330,false
 150,weakrand,330,false
 151,weakrand,330,true
+152,weakrand,330,true
+153,weakrand,330,false
+154,weakrand,330,true
+155,weakrand,330,true
