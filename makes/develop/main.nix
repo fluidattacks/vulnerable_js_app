@@ -21,6 +21,7 @@ makeScript {
     ];
     bin = [
       inputs.nixpkgs.bash
+      inputs.nixpkgs.procps
     ];
   };
   entrypoint = ''
