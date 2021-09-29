@@ -27,5 +27,5 @@ makeScript {
   entrypoint = ''
     npm run watch:dev
   '';
-  name = "runtime";
+  name = "development";
 }

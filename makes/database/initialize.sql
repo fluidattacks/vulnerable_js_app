@@ -1,4 +1,5 @@
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'oyster';
+FLUSH PRIVILEGES;
 
 CREATE DATABASE vulnerable_js_app;
 

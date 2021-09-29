@@ -7,13 +7,19 @@ function start_db {
     --datadir="${local_dir}/datadir/" \
     --basedir="${local_dir}/" \
     --socket="${local_dir}/socket.sock" \
-    --mysqlx-socket="${local_dir}/socketx.sock" \
+    --log-error \
+    --log-error="$PWD/.database/errors.log" \
+    --old-passwords=2 \
     --daemonize
 }
 
 if (! test -d "${local_dir}/datadir/"); then
   mkdir -p "${local_dir}/datadir/" \
-    && mysqld --datadir="${local_dir}/datadir" --initialize-insecure \
+    && mysqld \
+      --old-passwords=2 \
+      --log-error="$PWD/.database/errors.log" \
+      --datadir="${local_dir}/datadir" \
+      --initialize-insecure \
     && start_db \
     && mysql \
       --socket "${local_dir}/socket.sock" \
