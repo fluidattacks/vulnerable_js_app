@@ -9,7 +9,7 @@ makeScript {
   };
   searchPaths = {
     bin = [
-      inputs.nixpkgs.mysql80
+      inputs.nixpkgs.mysql57
     ];
   };
   entrypoint = ./entrypoint.sh;
