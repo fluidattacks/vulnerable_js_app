@@ -156,3 +156,16 @@ testcase,category,cwe,vulnerable
 153,weakrand,330,false
 154,weakrand,330,true
 155,weakrand,330,true
+156,sqli,89,true
+157,sqli,89,true
+158,sqli,89,true
+159,sqli,89,true
+160,sqli,89,true
+161,sqli,89,true
+162,sqli,89,true
+163,sqli,89,true
+164,sqli,89,true
+165,sqli,89,true
+166,sqli,89,true
+167,sqli,89,true
+168,sqli,89,false

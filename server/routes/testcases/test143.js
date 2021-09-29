@@ -15,7 +15,6 @@ router.get("/test143/", function (req, res) {
 
     var doc = new DOMParser().parseFromString(data.toString());
 
-    xpath.parse("dasdasdas");
     var findUserXPath = `//Employee[UserName/text()='${userName}' and Password/text()='${password}']`;
     let badXPathExpr = xpath.parse(findUserXPath);
 
